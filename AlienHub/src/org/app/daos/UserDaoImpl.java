@@ -40,27 +40,31 @@ UserModel umodel;
 	
 
 	public UserModel userDetails(UserModel umodel) {
-		System.out.println("normal password is:"+umodel.getPassword());
+		//System.out.println("normal password is:"+umodel.getPassword());
+		System.out.println("calling dao:");
 		String query="Select * from users where uemail=? AND upassword=md5(?)";
-		System.out.println("password is:"+umodel.getPassword());
+		//System.out.println("password is:"+umodel.getPassword());
 	
 		List<UserModel>  data=connect.getTemplate().query(query, new Object[] {umodel.getEmail(),umodel.getPassword()}, new UserMapper());
-		System.out.println(data.size());
+		//System.out.println(data.size());ew
 		if(data.size()>0)
 		{
 			System.out.println("Login Sucsess");
-			 System.out.println("Data at 0 in DAo"+data.get(0));
+			 System.out.println("Data at 0 in DAo:"+data.get(0));
 			 return data .get(0);
 			 
 		}
 		else 
 		{
-			System.out.println("Login Failed");
-		
+			System.out.println("Login Failed at DAO");
+			System.out.println("Data return by DAOIMPL is"+umodel);
+			return null;
+
 		}
 		
-		return umodel;	
+		
 	}
+	
 	
 	
 	@Override 

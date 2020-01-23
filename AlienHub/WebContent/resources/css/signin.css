@@ -1,0 +1,116 @@
+body {
+  background-color:#44c4e7;
+}
+
+h2 {
+  font-family: 'Roboto';
+  color:#fff;
+  font-size: 40px;
+  text-align: center;
+}
+
+.form-area {
+  text-align: center;
+  background-color:white;
+  /* width:500px; */
+  width:45%;
+  padding: 10PX 20PX;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  
+}
+
+.avatar {
+  
+  width:100%;
+ 
+}
+
+  /* .avatar:hover {
+      
+  } */
+
+.user_image
+{
+  margin-top: 20px;
+  width:100px;
+  height:100px;
+  /* width:25%;
+  height: 25%; */
+  border-radius: 100px;
+  text-align: center;
+      }
+.user_image:hover {
+  border:1px solid #777;
+}
+
+.res {
+	margin-top:20px;
+  background-color: red;
+  color: #fff;
+  font-family:'Roboto';
+  font-weight:600;
+  font-size:18px;
+  display:none;
+  height:6%;
+ 
+  
+ 
+}
+
+.form-data {
+margin-top: 30px;
+}
+
+.form-data input {
+  
+  display: inline-block;
+  background-color: white;
+  box-sizing: border-box;
+  width:90%;
+  
+  margin: 10px;
+  padding:10px;
+  border: 1px solid #ccc;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#sign_up{
+  /* margin-left: 200px; */
+  font-size:2vw;
+  font-family: roboto;
+  font-weight: 400;
+  color:#44c4e7;
+  
+  }
+#sign_up_link{
+  font-size:2vw;
+  font-family:'roboto';
+  font-weight: 400;
+  color:#44c4e7;
+}
+
+input.btn {
+  width:90%;
+  background-color:#44c4e7;
+  box-sizing: border-box;
+  padding:10px;
+  margin: 10px 0px 15px;
+  font-size:2vw;
+  font-family:roboto;
+  font-weight: 600;
+  color:#fff;
+
+}
+
+
+
+#fp{
+  /* margin-left: 200px; */
+  font-size:2vw;
+  font-family:'roboto';
+  font-weight: 400;
+  color:#44c4e7
+  
+  }

@@ -25,6 +25,18 @@
     </plugins>
   </build>
   <dependencies>
+  
+  <!-- https://mvnrepository.com/artifact/com.firebase/geofire-java -->
+<!-- https://mvnrepository.com/artifact/com.firebase/geofire -->
+<!-- https://mvnrepository.com/artifact/com.firebase/geofire -->
+<dependency>
+    <groupId>com.firebase</groupId>
+    <artifactId>geofire</artifactId>
+    <version>2.3.1</version>
+    <type>pom</type>
+</dependency>
+
+
   <!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
 <dependency>
     <groupId>javax.servlet</groupId>
@@ -132,6 +144,13 @@
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.6</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.10.0</version>
 </dependency>
 
   

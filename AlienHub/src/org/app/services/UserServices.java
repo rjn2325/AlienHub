@@ -24,17 +24,24 @@ public class UserServices
 	
 	public UserModel userDetails(UserModel umodel)
 	{
-		System.out.println("calling UserDetails in Dao");
-		return udaoimpl.userDetails(umodel);
+		UserModel umodelser=udaoimpl.userDetails(umodel);
+		
+		System.out.println("In service layer:"+umodelser);
+		
+		if(umodelser==null)
+		{
+			return null;
 		
 		
 	}
-	
+		else 
+		{
+			return umodelser;
+		}
+	}
 	public int validateLoginService(UserModel umodel)
 	{
 		System.out.println("Validate Login Service calling Validate Login in DAO ");
 		return udaoimpl.validateLogin(umodel);
-		
-		
 	}
 }
